@@ -1,0 +1,42 @@
+https://community.aviatrix.com/t/y4hh4ml/ace-associate-self-paced-learning-guidelines
+
+
+https://docs.aviatrix.com/HowTos/gateway.html
+
+ace@aviatrix.com/HowTos/gateway
+
+
+https://aviatrix.cirrusplatform.com/
+
+
+https://community.aviatrix.com/t/h7hxfw4/aviatrix-certified-engineer-frequently-asked-questions
+
+
+
+554499719462
+
+
+
+413794794204
+
+Had a webex with Customer
+
+Found a MS SQL job which was in Hung state for 3 days
+
+use the CHROME debug gui got the JOB id and usign the below curl commands marked it as completed
+
+curl -XGET localhost:14300/index_activity/_doc/28622aaf-2928-49cb-83d6-8f452aa439ea?pretty > /home/admin/28622aaf-2928-49cb-83d6-8f452aa439ea.log      ##  This command will save the existing Elastic Search entry for the index_activity.  Always perform this step if modifying the ES database.
+
+curl -XPOST localhost:14300/index_activity/_doc/ab390968-0e75-4e27-abba-904cb4592991/_update -H "Content-Type: application/json" -d '{"doc":{"state":"COMPLETED"}}'   ## This command is going to change the state from Running to Completed, which will remove it from the UI.
+
+
+Customer wanted to run a manual job for the policy and it completed successfully.
+
+Customer wanted re reun the policy for the client which had no backup "OMR DB"
+
+Backup was initiated but it was stuck in queued state
+
+Restaretd the Power protect Agent on the client 
+Restaretd the PPDM Services as well and triggered a manual backup for 2 SQL cleint and the backup went fien for other SQL hist but not for "OMR" its on queued state only
+
+
